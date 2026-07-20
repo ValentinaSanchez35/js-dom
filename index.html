@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-JS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="card">
+        <h2 id="name"> ACME</h2>
+        <p id="profession"> Estudiantes de Desarroloo web</p>
+
+        <button onclick="Saludar()">Saludar</button>
+        <button onclick="changeText()">Cambiar Profesion</button>
+        <button onclick=" changeColor()">Cambiar Color</button>
+        <button onclick=" hideCard()"> Ocultar </button>
+
+        <hr> 
+
+        <label>
+            <input type="checkbox"id= "toggleEdit">
+            Editar nombre
+        </label>
+
+        <div id="editSection" class="hidden">
+            <input type="text"id= "newName" placeholder=" Nuevo nombre">
+            <Button id="changeBtn">Atualizar nombre </Button>
+        </div>
+    </div>
+
+    <div class=" cardTable">
+        <h2> Agregar  Producto </h2>
+
+        <form id="productFrom">
+            <input type="text"id= "productName" placeholder=" Nombre de producto">
+            <input type="text"number= "productPrice" placeholder=" Precio">
+            <Button type="text"submir= "principal"> Agregar </Button>
+        </form>
+    </div>
+
+
+    <div class="cardTable">
+        <h2> Lista de Producto</h2>
+        <table id  = "productsTable">
+            <thead>
+                <tr>
+                    <th> Nombre</th>
+                    <th> Precion</th>
+                    <th> Accion</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
